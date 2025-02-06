@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+      
+        width: 80vh;
+        height: 80vh;
+      
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        font-weight: 800;
+       font-size: larger;
+    }
+    
+   
+</style>
+<body>
+
+    <div class="hii"> copy me </div>
+    
+
+
+    <script>
+        document.addEventListener("copy", (event) => {
+            const selectedData = window.getSelection().toString(); // Use toString() with lowercase 't'
+            console.log(selectedData);
+            event.clipboardData.setData( 
+                
+                "text/plain",
+                " 🥰🤗"
+            );
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

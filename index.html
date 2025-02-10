@@ -30,13 +30,14 @@
 
     <script>
         document.addEventListener("copy", (event) => {
-            const selectedData = window.getSelection().toString(); // Use toString() with lowercase 't'
-            console.log(selectedData);
+            const selectedData = window.getSelection().toString(); 
+           
+             
             event.clipboardData.setData( 
                 
                 "text/plain",
-                "🧐🧐🧐🧐🧐🧐🧐🧐🧐🧐 "
-            );
+                " Hey what's up "
+            ); 
             event.preventDefault();
         });
     </script>
